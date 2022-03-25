@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./assets/fonts/Gelion Regular Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/Gelion Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./assets/fonts/Gelion Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: italic;
+  font-weight: 100;
+  src: url('./assets/fonts/Gelion Thin Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: italic;
+  font-weight: 300;
+  src: url('./assets/fonts/Gelion Light Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: normal;
+  font-weight: 100;
+  src: url('./assets/fonts/Gelion Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: italic;
+  font-weight: 500;
+  src: url('./assets/fonts/Gelion Medium Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/Gelion Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: italic;
+  font-weight: 600;
+  src: url('./assets/fonts/Gelion SemiBold Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/Gelion SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: italic;
+  font-weight: 700;
+  src: url('./assets/fonts/Gelion Bold Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/Gelion Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: italic;
+  font-weight: 900;
+  src: url('./assets/fonts/Gelion Black Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./assets/fonts/Gelion Black.woff') format('woff');
+}
