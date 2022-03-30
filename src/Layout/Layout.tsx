@@ -7,7 +7,7 @@ const Layout: FC = () => {
   return (
     <div className="layout flex">
       <Nav />
-      <main>
+      <main className="flex-1">
         <Header />
       </main>
     </div>

@@ -1,0 +1,182 @@
+.header {
+  &-top {
+    padding: 1.2rem;
+    padding-left: 4rem;
+    padding-right: 5.6rem;
+    border-bottom: 1px solid #ecebf5;
+
+    & div {
+    }
+
+    &-left {
+      flex: 0 0 44.1rem;
+      height: 5.4rem;
+      background: #fafafc;
+      border-radius: 1rem;
+      padding: 1.2rem 1.6rem;
+
+      & form {
+        & div {
+          & input {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.9rem;
+
+            &::placeholder {
+              color: #a3a3c2;
+            }
+          }
+        }
+      }
+
+      & svg {
+        height: 2.1rem;
+        width: 2.1rem;
+      }
+    }
+
+    &-right {
+      flex: 0 0 17.5rem;
+      height: 5.4rem;
+      border: 0.1rem solid #ecebf5;
+      border-radius: 0.8rem;
+      padding: 1.1rem 1.6rem;
+
+      & button {
+        & svg {
+          fill: #92929d;
+        }
+      }
+
+      & hr {
+        width: 1px;
+        height: 2.4rem;
+        background: #ecebf5;
+        margin: 0px 2.4rem;
+      }
+    }
+
+    &-notification {
+      & svg {
+        height: 1.8rem;
+        width: 1.8rem;
+        margin-right: 0.625rem;
+      }
+
+      & span {
+        width: 1.6rem;
+        height: 1.6rem;
+        background: #f25a68;
+        border-radius: 0.4rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        color: #ffffff;
+      }
+    }
+
+    &-avatar {
+      & svg {
+        height: 1.6rem;
+        width: 1.6rem;
+      }
+
+      & div {
+        width: 3.2rem;
+        height: 3.2rem;
+        border: 1px solid #6837ef;
+        margin-right: 1.2rem;
+      }
+    }
+  }
+
+  &-middle {
+    height: 5.8rem;
+    border-bottom: 1px solid #ecebf5;
+    padding-left: 4rem;
+
+    &-active {
+      color: #060213 !important;
+      border-bottom: 2px solid #6837ef;
+    }
+
+    & ul {
+      gap: 4rem;
+
+      & li {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #696d8c;
+      }
+    }
+  }
+
+  &-bottom {
+    padding: 3.3rem 5.6rem 3.2rem 4rem;
+
+    & h1 {
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 160%;
+      color: #060213;
+    }
+
+    & > div {
+      height: 4.4rem;
+
+      & form {
+        padding: 0 1.8rem;
+        flex: 0 0 35rem;
+        margin-right: 2.4rem;
+        background: #ffffff;
+        border: 1px solid #e1e1eb;
+        border-radius: 0.8rem;
+
+        & button {
+          margin-right: 1.6rem;
+
+          & svg {
+            width: 1.6rem;
+            height: 1.6rem;
+          }
+        }
+      }
+
+      & hr {
+        width: 1px;
+        height: 3rem;
+        background: #ecebf5;
+        margin: 0px 1.6rem;
+      }
+    }
+
+    &-filter {
+      flex: 0 0 16rem;
+      background: #ffffff;
+      border-radius: 0.8rem;
+      border: 1px solid #e1e1eb;
+      gap: 1.6rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #060213;
+
+      & svg {
+        height: 1.6rem;
+        width: 1.6rem;
+        fill: #060213;
+      }
+    }
+
+    &-export {
+      flex: 0 0 10.5rem;
+      border-radius: 0.8rem;
+      background: #25bb87;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #ffffff;
+    }
+  }
+}
