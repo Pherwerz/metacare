@@ -70,7 +70,7 @@ const Header: FC = () => {
         <ul className="h-full flex ">
           {links.map(cur => (
             <li
-              className={`h-full flex items-center${
+              className={`h-full cursor-pointer flex items-center${
                 cur.active ? ' header-middle-active' : ''
               }`}
               key={cur.name}
