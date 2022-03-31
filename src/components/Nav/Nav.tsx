@@ -91,6 +91,7 @@ const Nav: FC = () => {
               }${currentlyOpened === i ? ' nav-items-btn-active' : ''}`}
               onClick={() => {
                 setCurrentlyOpened(i);
+                setCurrentLink(0);
               }}
             >
               <svg>
@@ -118,10 +119,13 @@ const Nav: FC = () => {
               {currentlyOpened === i &&
                 cur.links.map((link, il) => (
                   <li
-                    className={`nav-list-items ${
+                    className={`nav-list-items cursor-pointer ${
                       currentLink === il ? 'nav-list-items-active' : ''
                     }`}
                     key={link.name}
+                    onClick={() => {
+                      setCurrentLink(il);
+                    }}
                   >
                     <a href={link.link}>{link.name}</a>
                   </li>

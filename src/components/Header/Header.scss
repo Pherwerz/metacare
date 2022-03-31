@@ -3,10 +3,7 @@
     padding: 1.2rem;
     padding-left: 4rem;
     padding-right: 5.6rem;
-    border-bottom: 1px solid #ecebf5;
-
-    & div {
-    }
+    border-bottom: 0.1rem solid var(--border);
 
     &-left {
       flex: 0 0 44.1rem;
@@ -38,7 +35,7 @@
     &-right {
       flex: 0 0 17.5rem;
       height: 5.4rem;
-      border: 0.1rem solid #ecebf5;
+      border: 0.1rem solid var(--border);
       border-radius: 0.8rem;
       padding: 1.1rem 1.6rem;
 
@@ -51,7 +48,7 @@
       & hr {
         width: 1px;
         height: 2.4rem;
-        background: #ecebf5;
+        background: var(--border);
         margin: 0px 2.4rem;
       }
     }
@@ -71,7 +68,7 @@
         font-weight: 400;
         font-size: 1.2rem;
         line-height: 2rem;
-        color: #ffffff;
+        color: var(--white);
       }
     }
 
@@ -84,7 +81,7 @@
       & div {
         width: 3.2rem;
         height: 3.2rem;
-        border: 1px solid #6837ef;
+        border: 0.1rem solid #6837ef;
         margin-right: 1.2rem;
       }
     }
@@ -92,12 +89,12 @@
 
   &-middle {
     height: 5.8rem;
-    border-bottom: 1px solid #ecebf5;
+    border-bottom: 0.1rem solid var(--border);
     padding-left: 4rem;
 
     &-active {
-      color: #060213 !important;
-      border-bottom: 2px solid #6837ef;
+      color: var(--black) !important;
+      border-bottom: 0.2rem solid #6837ef;
     }
 
     & ul {
@@ -107,7 +104,7 @@
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 2.4rem;
-        color: #696d8c;
+        color: var(--grey);
       }
     }
   }
@@ -119,7 +116,7 @@
       font-weight: 600;
       font-size: 2.4rem;
       line-height: 160%;
-      color: #060213;
+      color: var(--black);
     }
 
     & > div {
@@ -129,8 +126,8 @@
         padding: 0 1.8rem;
         flex: 0 0 35rem;
         margin-right: 2.4rem;
-        background: #ffffff;
-        border: 1px solid #e1e1eb;
+        background: var(--white);
+        border: 0.1rem solid var(--border-2);
         border-radius: 0.8rem;
 
         & button {
@@ -144,28 +141,28 @@
       }
 
       & hr {
-        width: 1px;
+        width: 0.1rem;
         height: 3rem;
-        background: #ecebf5;
+        background: var(--border);
         margin: 0px 1.6rem;
       }
     }
 
     &-filter {
       flex: 0 0 16rem;
-      background: #ffffff;
+      background: var(--white);
       border-radius: 0.8rem;
-      border: 1px solid #e1e1eb;
+      border: 0.1rem solid var(--border-2);
       gap: 1.6rem;
       font-weight: 400;
       font-size: 1.6rem;
       line-height: 2.4rem;
-      color: #060213;
+      color: var(--black);
 
       & svg {
         height: 1.6rem;
         width: 1.6rem;
-        fill: #060213;
+        fill: var(--black);
       }
     }
 
@@ -176,7 +173,7 @@
       font-weight: 400;
       font-size: 1.6rem;
       line-height: 2.4rem;
-      color: #ffffff;
+      color: var(--white);
     }
   }
 }

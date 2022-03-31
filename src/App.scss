@@ -1,3 +1,11 @@
+:root {
+  --white: #ffffff;
+  --border: #ecebf5;
+  --border-2: #e1e1eb;
+  --black: #060213;
+  --grey: #696d8c;
+}
+
 *,
 *::after,
 *::before {
@@ -37,13 +45,21 @@ html {
   @media (max-width: 700px) {
     font-size: 30%;
   }
+
+  @media (max-width: 600px) {
+    font-size: 25%;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 20%;
+  }
 }
 
 body {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: 'Gelion', sans-serif;
-  background-color: #ffffff;
+  background-color: var(--white);
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
