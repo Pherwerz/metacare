@@ -84,6 +84,7 @@ const stats = [
 ];
 
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'];
+const data = [15, 40, 20, 30, 30, 45, 20, 40];
 
 const Body: FC = () => {
   return (
@@ -155,7 +156,12 @@ const Body: FC = () => {
                   labels: months,
                   datasets: [
                     {
-                      data: [15, 40, 20, 30, 30, 45, 20, 40],
+                      data: data.map((cur, inn) => {
+                        return {
+                          y: cur,
+                          x: months[inn],
+                        };
+                      }),
                       borderColor: stat.color,
                       backgroundColor: '#fff',
                       pointRadius: 8,
@@ -170,8 +176,8 @@ const Body: FC = () => {
           </div>
 
           <div className="body-right flex flex-col justify-between">
-            {stat.records.map((record, i) => (
-              <SmallBox key={i} p={record.title} h={record.result} />
+            {stat.records.map((record, ii) => (
+              <SmallBox key={ii} p={record.title} h={record.result} />
             ))}
           </div>
         </section>
