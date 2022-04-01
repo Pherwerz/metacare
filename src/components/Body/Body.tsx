@@ -154,12 +154,13 @@ const Body: FC = () => {
                   labels: months,
                   datasets: [
                     {
-                      data: [15, 40, 20, 30, 30, 45, 0, 40],
+                      data: [15, 40, 20, 30, 30, 45, 20, 40],
                       borderColor: stat.color,
                       backgroundColor: '#fff',
                       pointRadius: 8,
                       pointHoverRadius: 8,
                       pointBorderColor: stat.color,
+                      borderWidth: 1,
                     },
                   ],
                 }}
