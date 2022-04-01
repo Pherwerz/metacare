@@ -2,6 +2,27 @@ import { FC } from 'react';
 import './Body.scss';
 import SmallBox from './SmallBox';
 import icon from '../../assets/icons/icons.svg';
+import { Line } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 const stats = [
   {
@@ -62,6 +83,8 @@ const stats = [
   },
 ];
 
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'];
+
 const Body: FC = () => {
   return (
     <div className="body">
@@ -95,7 +118,53 @@ const Body: FC = () => {
               </div>
             </div>
 
-            <div></div>
+            <div className="body-left-bottom">
+              <Line
+                options={{
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  plugins: {
+                    legend: {
+                      display: false,
+                    },
+                  },
+                  scales: {
+                    x: {
+                      grid: {
+                        display: false,
+                        drawBorder: true,
+                        drawOnChartArea: false,
+                        drawTicks: false,
+                      },
+                    },
+                    y: {
+                      grid: {
+                        drawBorder: false,
+                        drawTicks: false,
+                      },
+                      min: 10,
+                      max: 50,
+                      ticks: {
+                        stepSize: 10,
+                      },
+                    },
+                  },
+                }}
+                data={{
+                  labels: months,
+                  datasets: [
+                    {
+                      data: [15, 40, 20, 30, 30, 45, 0, 40],
+                      borderColor: stat.color,
+                      backgroundColor: '#fff',
+                      pointRadius: 8,
+                      pointHoverRadius: 8,
+                      pointBorderColor: stat.color,
+                    },
+                  ],
+                }}
+              />
+            </div>
           </div>
 
           <div className="body-right flex flex-col justify-between">
