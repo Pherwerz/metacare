@@ -135,6 +135,7 @@ const Body: FC = () => {
                         drawBorder: true,
                         drawOnChartArea: false,
                         drawTicks: false,
+                        borderColor: '#ECEBF5',
                       },
                     },
                     y: {
